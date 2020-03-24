@@ -1,4 +1,4 @@
-endpoint: http://localhost:4466
+endpoint: http://prisma:4466
 datamodel: datamodel.prisma
 databaseType: document
 
@@ -9,4 +9,3 @@ generate:
 hooks:
   post-deploy:
    - prisma generate
-   - npx nexus-prisma-generate --client ./prisma/prisma-client --output ./prisma/nexus-prisma
